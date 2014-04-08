@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="ThemeBucket">
-    <link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/images/favicon.png">
+    <link rel="shortcut icon" href="<?php echo Yii::app()->request->getBaseUrl(true); ?>/images/favicon.png">
 
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
     <!--Core CSS -->
-    <link href="<?php echo Yii::app()->request->baseUrl; ?>/bs3/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap-reset.css" rel="stylesheet">
-    <link href="<?php echo Yii::app()->request->baseUrl; ?>/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="<?php echo Yii::app()->request->getBaseUrl(true); ?>/bs3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo Yii::app()->request->getBaseUrl(true); ?>/css/bootstrap-reset.css" rel="stylesheet">
+    <link href="<?php echo Yii::app()->request->getBaseUrl(true); ?>/font-awesome/css/font-awesome.css" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
-    <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css" rel="stylesheet">
-    <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/style-responsive.css" rel="stylesheet" />
+    <link href="<?php echo Yii::app()->request->getBaseUrl(true); ?>/css/style.css" rel="stylesheet">
+    <link href="<?php echo Yii::app()->request->getBaseUrl(true); ?>/css/style-responsive.css" rel="stylesheet" />
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]>
-    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -37,9 +37,8 @@
 <header class="header fixed-top clearfix">
 <!--logo start-->
 <div class="brand">
-
-    <a href="index.html" class="logo">
-        <img src="images/logo.png" alt="">
+    <a href="<?php echo Yii::app()->request->getBaseUrl(true); ?>" class="logo">
+        <img src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/images/logo.png" alt="">
     </a>
     <div class="sidebar-toggle-box">
         <div class="fa fa-bars"></div>
@@ -257,142 +256,48 @@
 <!--header end-->
 <aside>
     <div id="sidebar" class="nav-collapse">
-        <!-- sidebar menu start-->            <div class="leftside-navigation">
-            <ul class="sidebar-menu" id="nav-accordion">
-                <li>
-                    <a href="index.html">
-                        <i class="fa fa-dashboard"></i>
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class="fa fa-laptop"></i>
-                        <span>Layouts</span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="boxed_page.html">Boxed Page</a></li>
-                        <li><a href="horizontal_menu.html">Horizontal Menu</a></li>
-                        <li><a href="language_switch.html">Language Switch Bar</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class="fa fa-book"></i>
-                        <span>UI Elements</span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="general.html">General</a></li>
-                        <li><a href="buttons.html">Buttons</a></li>
-                        <li><a href="typography.html">Typography</a></li>
-                        <li><a href="widget.html">Widget</a></li>
-                        <li><a href="slider.html">Slider</a></li>
-                        <li><a href="tree_view.html">Tree View</a></li>
-                        <li><a href="nestable.html">Nestable</a></li>
-                        <li><a href="grids.html">Grids</a></li>
-                        <li><a href="calendar.html">Calender</a></li>
-                        <li><a href="draggable_portlet.html">Draggable Portlet</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="fontawesome.html">
-                        <i class="fa fa-bullhorn"></i>
-                        <span>Fontawesome </span>
-                    </a>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;" class="active">
-                        <i class="fa fa-th"></i>
-                        <span>Data Tables</span>
-                    </a>
-                    <ul class="sub">
-                        <li class="active"><a href="basic_table.html">Basic Table</a></li>
-                        <li><a href="responsive_table.html">Responsive Table</a></li>
-                        <li><a href="dynamic_table.html">Dynamic Table</a></li>
-                        <li><a href="editable_table.html">Editable Table</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class="fa fa-tasks"></i>
-                        <span>Form Components</span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="form_component.html">Form Elements</a></li>
-                        <li><a href="advanced_form.html">Advanced Components</a></li>
-                        <li><a href="form_wizard.html">Form Wizard</a></li>
-                        <li><a href="form_validation.html">Form Validation</a></li>
-                        <li><a href="file_upload.html">Muliple File Upload</a></li>
-
-                        <li><a href="dropzone.html">Dropzone</a></li>
-                        <li><a href="inline_editor.html">Inline Editor</a></li>
-
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class="fa fa-envelope"></i>
-                        <span>Mail</span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="mail.html">Inbox</a></li>
-                        <li><a href="mail_compose.html">Compose Mail</a></li>
-                        <li><a href="mail_view.html">View Mail</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class=" fa fa-bar-chart-o"></i>
-                        <span>Charts</span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="morris.html">Morris</a></li>
-                        <li><a href="chartjs.html">Chartjs</a></li>
-                        <li><a href="flot_chart.html">Flot Charts</a></li>
-                        <li><a href="c3_chart.html">C3 Chart</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class=" fa fa-bar-chart-o"></i>
-                        <span>Maps</span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="google_map.html">Google Map</a></li>
-                        <li><a href="vector_map.html">Vector Map</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class="fa fa-glass"></i>
-                        <span>Extra</span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="blank.html">Blank Page</a></li>
-                        <li><a href="lock_screen.html">Lock Screen</a></li>
-                        <li><a href="profile.html">Profile</a></li>
-                        <li><a href="invoice.html">Invoice</a></li>
-                        <li><a href="pricing_table.html">Pricing Table</a></li>
-                        <li><a href="timeline.html">Timeline</a></li>
-                        <li><a href="gallery.html">Media Gallery</a></li><li><a href="404.html">404 Error</a></li>
-                        <li><a href="500.html">500 Error</a></li>
-                        <li><a href="registration.html">Registration</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="login.html">
-                        <i class="fa fa-user"></i>
-                        <span>Login Page</span>
-                    </a>
-                </li>
-            </ul></div>
+        <!-- sidebar menu start-->
+        <div class="leftside-navigation">
+            <?php $this->widget('zii.widgets.CMenu',array(
+                'items'=>array(
+                    array(
+                        'label'=>'Dashboard',
+                        'url'=>array('/'),
+                    ),
+                    array(
+                        'label'=>'Projects',
+                        'url'=>array('/projects')
+                    ),
+                    array(
+                        'label'=>'Tasks',
+                        'url'=>array('/site/tasks')
+                    ),
+                    array(
+                        'label'=>'Messages',
+                        'url'=>array('/site/messages')
+                    ),
+                ),
+                'htmlOptions' => array(
+                    'id' => 'nav-accordion',
+                    'class' => 'sidebar-menu'
+                ),
+            ));
+            ?>
+        </div>
         <!-- sidebar menu end-->
     </div>
 </aside>
 <!--sidebar end-->
 <!--main content start-->
 <section id="main-content">
-<?echo $content;?>
+
+    <section class="wrapper">
+        <!-- page start-->
+
+        <?echo $content;?>
+
+        <!-- page end-->
+    </section>
 </section>
 <!--main content end-->
 <!--right sidebar start-->
@@ -652,25 +557,25 @@
 <!-- Placed js at the end of the document so the pages load faster -->
 
 <!--Core js-->
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/bs3/js/bootstrap.min.js"></script>
-<script class="include" type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.dcjqaccordion.2.7.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.scrollTo.min.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.nicescroll.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/jquery.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/bs3/js/bootstrap.min.js"></script>
+<script class="include" type="text/javascript" src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/jquery.scrollTo.min.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/jquery.nicescroll.js"></script>
 <!--Easy Pie Chart-->
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/easypiechart/jquery.easypiechart.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/easypiechart/jquery.easypiechart.js"></script>
 <!--Sparkline Chart-->
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/sparkline/jquery.sparkline.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/sparkline/jquery.sparkline.js"></script>
 <!--jQuery Flot Chart-->
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/flot-chart/jquery.flot.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/flot-chart/jquery.flot.tooltip.min.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/flot-chart/jquery.flot.resize.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/flot-chart/jquery.flot.pie.resize.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/flot-chart/jquery.flot.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/flot-chart/jquery.flot.tooltip.min.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/flot-chart/jquery.flot.resize.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/flot-chart/jquery.flot.pie.resize.js"></script>
 
 
 <!--common script init for all pages-->
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/scripts.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/scripts.js"></script>
 
 </body>
 </html>

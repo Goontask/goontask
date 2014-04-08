@@ -3,8 +3,7 @@
 
 $this->pageTitle=Yii::app()->name." - Main Page";
 ?>
-<section class="wrapper">
-<!--mini statistics start-->
+
 <div class="row">
     <div class="col-md-3">
         <section class="panel">
@@ -663,4 +662,3 @@ $this->pageTitle=Yii::app()->name." - Main Page";
     <!--todolist end-->
 </div>
 </div>
-</section>

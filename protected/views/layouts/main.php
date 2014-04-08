@@ -7,22 +7,22 @@
 <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
 	<!--Core CSS -->
-<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/bs3/css/bootstrap.min.css" />
-<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-ui/jquery-ui-1.10.1.custom.min.css">
-<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap-reset.css" />
-<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/font-awesome/css/font-awesome.css">
-<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/js/jvector-map/jquery-jvectormap-1.2.2.css">
-<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/clndr.css">
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->getBaseUrl(true); ?>/bs3/css/bootstrap.min.css" />
+<link rel="stylesheet" href="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/jquery-ui/jquery-ui-1.10.1.custom.min.css">
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->getBaseUrl(true); ?>/css/bootstrap-reset.css" />
+<link rel="stylesheet" href="<?php echo Yii::app()->request->getBaseUrl(true); ?>/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/jvector-map/jquery-jvectormap-1.2.2.css">
+<link rel="stylesheet" href="<?php echo Yii::app()->request->getBaseUrl(true); ?>/css/clndr.css">
 	<!--clock css-->
-<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/js/css3clock/css/style.css">
+<link rel="stylesheet" href="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/css3clock/css/style.css">
 	<!--Morris Chart CSS -->
-<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/js/morris-chart/morris.css">
+<link rel="stylesheet" href="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/morris-chart/morris.css">
 	<!-- Custom styles for this template -->
-<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css">
-<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style-responsive.css" />
+<link rel="stylesheet" href="<?php echo Yii::app()->request->getBaseUrl(true); ?>/css/style.css">
+<link rel="stylesheet" href="<?php echo Yii::app()->request->getBaseUrl(true); ?>/css/style-responsive.css" />
 <!-- Just for debugging purposes. Don't actually copy this line! -->
 <!--[if lt IE 9]>
-    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/ie8-responsive-file-warning.js"></script><![endif]-->
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -37,8 +37,8 @@
 <!--logo start-->
 <div class="brand">
 
-    <a href="/" class="logo">
-        <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/logo.png" alt="">
+    <a href="<?php echo Yii::app()->request->getBaseUrl(true); ?>" class="logo">
+        <img src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/images/logo.png" alt="">
     </a>
     <div class="sidebar-toggle-box">
         <div class="fa fa-bars"></div>
@@ -130,7 +130,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <span class="photo"><img alt="avatar" src="images/avatar-mini.jpg"></span>
+                        <span class="photo"><img alt="avatar" src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/images/avatar-mini.jpg"></span>
                                 <span class="subject">
                                 <span class="from">Jonathan Smith</span>
                                 <span class="time">Just now</span>
@@ -142,7 +142,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <span class="photo"><img alt="avatar" src="images/avatar-mini-2.jpg"></span>
+                        <span class="photo"><img alt="avatar" src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/images/avatar-mini-2.jpg"></span>
                                 <span class="subject">
                                 <span class="from">Jane Doe</span>
                                 <span class="time">2 min ago</span>
@@ -154,7 +154,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <span class="photo"><img alt="avatar" src="images/avatar-mini-3.jpg"></span>
+                        <span class="photo"><img alt="avatar" src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/images/avatar-mini-3.jpg"></span>
                                 <span class="subject">
                                 <span class="from">Tasi sam</span>
                                 <span class="time">2 days ago</span>
@@ -166,7 +166,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <span class="photo"><img alt="avatar" src="images/avatar-mini.jpg"></span>
+                        <span class="photo"><img alt="avatar" src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/images/avatar-mini.jpg"></span>
                                 <span class="subject">
                                 <span class="from">Mr. Perfect</span>
                                 <span class="time">2 hour ago</span>
@@ -233,14 +233,14 @@
         <!-- user login dropdown start-->
         <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                <img alt="" src="images/avatar1_small.jpg">
+                <img alt="" src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/images/avatar1_small.jpg">
                 <span class="username">John Doe</span>
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu extended logout">
                 <li><a href="#"><i class=" fa fa-suitcase"></i>Profile</a></li>
                 <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
-                <li><a href="login.html"><i class="fa fa-key"></i> Log Out</a></li>
+                <li><a href="/site/logout"><i class="fa fa-key"></i> Log Out</a></li>
             </ul>
         </li>
         <!-- user login dropdown end -->
@@ -291,6 +291,7 @@
 <!--sidebar end-->
 <!--main content start-->
 <section id="main-content">
+
 	<?php echo $content; ?>
 </section>
 <!--main content end-->
@@ -386,7 +387,7 @@
         <li>
             <div class="prog-row">
                 <div class="user-thumb">
-                    <a href="#"><img src="images/avatar1_small.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/images/avatar1_small.jpg" alt=""></a>
                 </div>
                 <div class="user-details">
                     <h4><a href="#">Jonathan Smith</a></h4>
@@ -400,7 +401,7 @@
             </div>
             <div class="prog-row">
                 <div class="user-thumb">
-                    <a href="#"><img src="images/avatar1.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/images/avatar1.jpg" alt=""></a>
                 </div>
                 <div class="user-details">
                     <h4><a href="#">Anjelina Joe</a></h4>
@@ -414,7 +415,7 @@
             </div>
             <div class="prog-row">
                 <div class="user-thumb">
-                    <a href="#"><img src="images/chat-avatar2.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/images/chat-avatar2.jpg" alt=""></a>
                 </div>
                 <div class="user-details">
                     <h4><a href="#">John Doe</a></h4>
@@ -428,7 +429,7 @@
             </div>
             <div class="prog-row">
                 <div class="user-thumb">
-                    <a href="#"><img src="images/avatar1_small.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/images/avatar1_small.jpg" alt=""></a>
                 </div>
                 <div class="user-details">
                     <h4><a href="#">Mark Henry</a></h4>
@@ -442,7 +443,7 @@
             </div>
             <div class="prog-row">
                 <div class="user-thumb">
-                    <a href="#"><img src="images/avatar1.jpg" alt=""></a>
+                    <a href="#"><img src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/images/avatar1.jpg" alt=""></a>
                 </div>
                 <div class="user-details">
                     <h4><a href="#">Shila Jones</a></h4>
@@ -551,44 +552,44 @@
 
 	<!-- Placed js at the end of the document so the pages load faster -->
 	<!--Core js-->
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-ui/jquery-ui-1.10.1.custom.min.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/bs3/js/bootstrap.min.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.dcjqaccordion.2.7.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.scrollTo.min.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.nicescroll.js"></script>
-<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/flot-chart/excanvas.min.js"></script><![endif]-->
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/skycons/skycons.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.scrollTo/jquery.scrollTo.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/jquery.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/jquery-ui/jquery-ui-1.10.1.custom.min.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/bs3/js/bootstrap.min.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/jquery.scrollTo.min.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/jquery.nicescroll.js"></script>
+<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/flot-chart/excanvas.min.js"></script><![endif]-->
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/skycons/skycons.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/jquery.scrollTo/jquery.scrollTo.js"></script>
 <script	src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/calendar/clndr.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/calendar/clndr.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/calendar/moment-2.2.1.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/evnt.calendar.init.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jvector-map/jquery-jvectormap-1.2.2.min.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jvector-map/jquery-jvectormap-us-lcc-en.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/gauge/gauge.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/calendar/moment-2.2.1.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/evnt.calendar.init.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/jvector-map/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/jvector-map/jquery-jvectormap-us-lcc-en.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/gauge/gauge.js"></script>
 	<!--clock init-->
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/css3clock/js/css3clock.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/css3clock/js/css3clock.js"></script>
 	<!--Easy Pie Chart-->
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/easypiechart/jquery.easypiechart.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/easypiechart/jquery.easypiechart.js"></script>
 	<!--Sparkline Chart-->
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/sparkline/jquery.sparkline.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/sparkline/jquery.sparkline.js"></script>
 	<!--Morris Chart-->
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/morris-chart/morris.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/morris-chart/raphael-min.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/morris-chart/morris.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/morris-chart/raphael-min.js"></script>
 	<!--jQuery Flot Chart-->
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/flot-chart/jquery.flot.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/flot-chart/jquery.flot.tooltip.min.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/flot-chart/jquery.flot.resize.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/flot-chart/jquery.flot.pie.resize.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/flot-chart/jquery.flot.animator.min.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/flot-chart/jquery.flot.growraf.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/dashboard.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.customSelect.min.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/flot-chart/jquery.flot.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/flot-chart/jquery.flot.tooltip.min.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/flot-chart/jquery.flot.resize.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/flot-chart/jquery.flot.pie.resize.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/flot-chart/jquery.flot.animator.min.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/flot-chart/jquery.flot.growraf.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/dashboard.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/jquery.customSelect.min.js"></script>
 	<!--common script init for all pages-->
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/scripts.js"></script>
+<script src="<?php echo Yii::app()->request->getBaseUrl(true); ?>/js/scripts.js"></script>
 	<!--script for this page-->
 </body>
 </html>
