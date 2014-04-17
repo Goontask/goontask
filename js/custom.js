@@ -14,15 +14,15 @@ $(document).ready(function () {
     $(document).on('click', '.ajax-submit', function(event){
         event.preventDefault();
         link = $(this).parents('form').attr('action')
-        $('#myModal .close').click();
         $.get(link, $(this).parents('form').serialize(), function(data){
-            $('#myModal3 .modal-body').html(data);
-            $('.form-back').click();
+            $('#myModal').html(data);
         });
     });
 
-    $(document).on('click', '.ok-button-yii', function(){
-        $('.close').trigger('click');
+    $('.add-input').click(function(){
+        input = $(this).parents('.input-group').find('input.form-control').clone();
+        $(this).parents('.input-group').before(input);
     });
+
 });
 

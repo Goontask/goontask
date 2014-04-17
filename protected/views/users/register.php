@@ -44,7 +44,7 @@ $this->breadcrumbs=array(
 
     <div class="registration">
         Already Registered.
-    	<a class="" href="/">Login</a>
+    	<a class="" href="<?php echo Yii::app()->request->getBaseUrl(true); ?>/">Login</a>
     </div>
 
 </div>

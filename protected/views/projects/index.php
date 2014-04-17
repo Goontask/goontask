@@ -1,7 +1,6 @@
 <?
     $this->pageTitle=Yii::app()->name." - Projects";
 ?>
-
 <div class="row">
     <div class="col-sm-12">
         <section class="panel">

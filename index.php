@@ -11,4 +11,4 @@ defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL',3);
 
 require_once($yii);
 require_once(dirname(__FILE__).'/protected/gntsk_helpers/functions.php');
-Yii::createWebApplication($config)->run();
+    Yii::createWebApplication($config)->run();
