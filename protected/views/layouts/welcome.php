@@ -38,6 +38,7 @@
 
     <!--Core js-->
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/custom.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/bs3/js/bootstrap.min.js"></script>
   </body>
 </html>

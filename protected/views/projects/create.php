@@ -1,18 +1,14 @@
 <?php
 /* @var $this ProjectsController */
 /* @var $model Projects */
-
-$this->breadcrumbs=array(
-	'Projects'=>array('index'),
-	'Create',
-);
-
-$this->menu=array(
-	array('label'=>'List Projects', 'url'=>array('index')),
-	array('label'=>'Manage Projects', 'url'=>array('admin')),
-);
 ?>
-
-<h1>Create Projects</h1>
-
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <header class="panel-heading">Create Projects</header>
+            <div class="panel-body">
+                    <?php $this->renderPartial('_form', array('model'=>$model)); ?>
+            </div>
+        </section>
+    </div>
+</div>

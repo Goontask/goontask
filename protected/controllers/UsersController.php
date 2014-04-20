@@ -28,12 +28,9 @@ class UsersController extends Controller
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('register'),
-				'users'=>array('*'),
-			),
+
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('register'),
+				'actions'=>array('register', 'forgotpassword'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -199,4 +196,49 @@ class UsersController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+    public function actionForgotPassword()
+    {
+
+        $model = new Users;
+        $this->layout = 'main';
+
+        if(!empty($_REQUEST)){
+            $data['show'] = false;
+            $email = $_REQUEST['email'];
+            if($email==""){
+                $data['mess'] = 'Вы забыли ввести email.';
+            }else{
+                $user_exist = $model->find(array(
+                    'select'=>array('id', 'email'),
+                    'condition'=>'email=:login',
+                    'params'=>array(':login'=>$email),
+                ));
+                if(!$user_exist->attributes['id']){
+                    $data['mess'] = 'Пользователь с таким email не найден.';
+                }else{
+                    $pass = generateRandomString();
+                    $salt = generateRandomString();
+                    $md5Pass = md5($pass . $salt );
+
+                    $user_exist->__set('salt', $salt);
+                    $user_exist->__set('password', $md5Pass);
+
+                    $user_exist->save(false);
+
+                    $message = new YiiMailMessage;
+                    $message->setBody('Выш новый пароль '.$md5Pass, 'text/html');
+                    $message->subject = 'Забыли пароль';
+                    $message->addTo($user_exist->attributes['email']);
+                    $message->from = Yii::app()->params['adminEmail'];
+                    Yii::app()->mail->send($message);
+                    $data['mess'] = 'Вам отпарвленно сообщение с новым паролем';
+                }
+            }
+        }else{
+            $data['show'] = true;
+        }
+        $this->renderPartial('forgotpassword', array('data'=>$data));
+    }
+
 }

@@ -1,10 +1,6 @@
 <?
     $this->pageTitle=Yii::app()->name." - Projects";
 ?>
-
-<section class="wrapper">
-<!-- page start-->
-
 <div class="row">
     <div class="col-sm-12">
         <section class="panel">
@@ -320,5 +316,3 @@
         </section>
     </div>
 </div>
-<!-- page end-->
-</section>

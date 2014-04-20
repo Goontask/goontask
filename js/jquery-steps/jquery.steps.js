@@ -1874,7 +1874,7 @@ var defaults = $.fn.steps.defaults = {
     onStepChanging: function (event, currentIndex, newIndex) { return true; },
 
     /**
-     * Fires after the step has change. 
+     * Fires after the step has change.
      *
      * @property onStepChanged
      * @type Event

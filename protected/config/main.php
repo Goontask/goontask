@@ -16,6 +16,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+        'ext.mail.YiiMailMessage',
 	),
 
 	'modules'=>array(
@@ -82,6 +83,14 @@ return array(
 				*/
 			),
 		),
+
+ 		'mail' => array(
+ 			'class' => 'ext.mail.YiiMail',
+ 			'transportType' => 'php',
+ 			'viewPath' => 'application.views.mail',
+ 			'logging' => true,
+ 			'dryRun' => false,
+ 		),
 	),
 
 	// application-level parameters that can be accessed
