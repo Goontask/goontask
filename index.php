@@ -1,6 +1,7 @@
 <?php
 
 // change the following paths if necessary
+//comment for git
 $yii=dirname(__FILE__).'/framework/yii.php';
 $config=dirname(__FILE__).'/protected/config/main.php';
 
