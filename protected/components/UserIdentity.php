@@ -81,16 +81,20 @@ class UserIdentity extends GUserIdentity
 		    'condition'=>'email=:login',
 		    'params'=>array(':login'=>$this->email),
 		));
-		
-		$salted_password = md5($this->password . $user->__get('salt'));
-		
-		
-		//echo "<pre>"; print_r($salted_password); echo "</pre>";
-	
-		$users=array(
-			$user->__get('email') => $user->__get('password')
-			
-		);
+
+        if($user){
+            $salted_password = md5($this->password . $user->__get('salt'));
+
+
+            //echo "<pre>"; print_r($salted_password); echo "</pre>";
+
+            $users=array(
+                $user->__get('email') => $user->__get('password')
+
+            );
+        }
+
+
 		if(!isset($users[$this->email]))
 			$this->errorCode=self::ERROR_USERNAME_INVALID;
 		elseif($users[$this->email]!==$salted_password)

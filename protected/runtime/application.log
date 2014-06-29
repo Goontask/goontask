@@ -432,3 +432,102 @@ Stack trace:
 REQUEST_URI=/js/bootstrap-timepicker/compiled/timepicker.css
 HTTP_REFERER=http://goontask.loc/
 ---
+2014/06/29 18:44:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap-timepicker/compiled/timepicker.css".' in /Applications/AMPPS/www/goontask.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/AMPPS/www/goontask.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('js/bootstrap-ti...')
+#1 /Applications/AMPPS/www/goontask.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/AMPPS/www/goontask.loc/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap-timepicker/compiled/timepicker.css
+HTTP_REFERER=http://goontask.loc/
+---
+2014/06/29 18:44:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap-timepicker/compiled/timepicker.css".' in /Applications/AMPPS/www/goontask.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/AMPPS/www/goontask.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('js/bootstrap-ti...')
+#1 /Applications/AMPPS/www/goontask.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/AMPPS/www/goontask.loc/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap-timepicker/compiled/timepicker.css
+HTTP_REFERER=http://goontask.loc/projects
+---
+2014/06/29 20:09:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jquery-1.10.2.min.map".' in /Applications/AMPPS/www/goontask.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/AMPPS/www/goontask.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery-1.10....')
+#1 /Applications/AMPPS/www/goontask.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/AMPPS/www/goontask.loc/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://goontask.loc/projects
+---
+2014/06/29 20:09:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap-timepicker/compiled/timepicker.css".' in /Applications/AMPPS/www/goontask.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/AMPPS/www/goontask.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('js/bootstrap-ti...')
+#1 /Applications/AMPPS/www/goontask.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/AMPPS/www/goontask.loc/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap-timepicker/compiled/timepicker.css
+HTTP_REFERER=http://goontask.loc/projects
+---
+2014/06/29 20:09:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jquery-1.10.2.min.map".' in /Applications/AMPPS/www/goontask.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/AMPPS/www/goontask.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery-1.10....')
+#1 /Applications/AMPPS/www/goontask.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/AMPPS/www/goontask.loc/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://goontask.loc/projects
+---
+2014/06/29 20:10:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap-timepicker/compiled/timepicker.css".' in /Applications/AMPPS/www/goontask.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/AMPPS/www/goontask.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('js/bootstrap-ti...')
+#1 /Applications/AMPPS/www/goontask.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/AMPPS/www/goontask.loc/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/bootstrap-timepicker/compiled/timepicker.css
+HTTP_REFERER=http://goontask.loc/projects
+---
+2014/06/29 20:17:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Applications/AMPPS/www/goontask.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/AMPPS/www/goontask.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Applications/AMPPS/www/goontask.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/AMPPS/www/goontask.loc/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://goontask.loc/
+---
+2014/06/29 20:20:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Applications/AMPPS/www/goontask.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/AMPPS/www/goontask.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Applications/AMPPS/www/goontask.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/AMPPS/www/goontask.loc/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://goontask.loc/
+---
+2014/06/29 20:25:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Applications/AMPPS/www/goontask.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/AMPPS/www/goontask.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Applications/AMPPS/www/goontask.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/AMPPS/www/goontask.loc/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://goontask.loc/
+---
+2014/06/29 20:26:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jquery-1.10.2.min.map".' in /Applications/AMPPS/www/goontask.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/AMPPS/www/goontask.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery-1.10....')
+#1 /Applications/AMPPS/www/goontask.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/AMPPS/www/goontask.loc/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://goontask.loc/
+---
+2014/06/29 20:26:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jquery-1.10.2.min.map".' in /Applications/AMPPS/www/goontask.loc/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/AMPPS/www/goontask.loc/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery-1.10....')
+#1 /Applications/AMPPS/www/goontask.loc/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/AMPPS/www/goontask.loc/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://goontask.loc/
+---
